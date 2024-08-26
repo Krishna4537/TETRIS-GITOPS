@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tetris
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tetris
+  template:
+    metadata:
+      labels:
+        app: tetris
+    spec:
+      containers:
+        - name: tetris
+          image: gcr.io/fiery-palace-430720-j1/tetris-react:latest # Updated to use your GCR image
+          ports:
+            - containerPort: 3000 # Use port 3000
