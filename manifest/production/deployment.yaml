@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tetris
+  name: tetris-production
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: tetris
+      app: tetris-production
   template:
     metadata:
       labels:
-        app: tetris
+        app: tetris-production
     spec:
       containers:
         - name: tetris

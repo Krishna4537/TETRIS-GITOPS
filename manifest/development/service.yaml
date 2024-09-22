@@ -4,7 +4,7 @@ metadata:
   name: tetris-service-development
 spec:
   selector:
-    app: tetris
+    app: tetris-development
   ports:
     - protocol: TCP
       port: 80 # Expose port 80
