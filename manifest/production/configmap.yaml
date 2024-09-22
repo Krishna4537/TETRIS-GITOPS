@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: tetris-config
 data:
-  ui_properties_file_name: "krishna-interface.properties"
+  ui_properties_file_name: "production-interface.properties"
